@@ -3,8 +3,8 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
 import Home from "./screens/Home";
-import FilmsList from "./screens/Films/FilmsList";
-import FilmDetails from "./screens/Films/FilmDetails";
+import List from "./screens/List";
+import Details from "./screens/Films/Details";
 
 const Stack = createStackNavigator();
 
@@ -20,19 +20,20 @@ function Routes() {
           }}
         />
         <Stack.Screen
-          name="Films"
-          component={FilmsList}
-          options={{
+          name="List"
+          component={List}
+          options={({ route }) => ({
+            title: route.params?.title,
             headerStyle: {
               backgroundColor: "#070b13",
               shadowColor: "#1c2e56",
             },
             headerTintColor: "#fff",
-          }}
+          })}
         />
         <Stack.Screen
-          name="FilmDetails"
-          component={FilmDetails}
+          name="Details"
+          component={Details}
           options={{
             headerStyle: {
               backgroundColor: "#070b13",

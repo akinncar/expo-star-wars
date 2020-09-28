@@ -13,7 +13,7 @@ const HomeCard: React.FC<Props> = ({ icon, title }: Props) => {
   const navigation = useNavigation();
 
   return (
-    <Container onPress={() => navigation.navigate(title)}>
+    <Container onPress={() => navigation.navigate("List", { title: title })}>
       <Content>
         <Ionicons name={icon} size={36} color="#fff" />
         <CardTitle>{title}</CardTitle>
