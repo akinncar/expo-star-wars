@@ -3,23 +3,12 @@ import { FlatList } from "react-native";
 import { useRoute } from "@react-navigation/native";
 import { RouteProp } from "@react-navigation/native";
 
-import api from "../../../services/api";
+import api from "../../services/api";
 
-import PeopleCard from "../../../components/PeopleCard";
-import PlanetCard from "../../../components/PlanetCard";
-import StarshipCard from "../../../components/StarshipCard";
-import VehicleCard from "../../../components/VehicleCard";
-import SpecieCard from "../../../components/SpecieCard";
+import DetailCard from "../../components/DetailCard";
 
-import {
-  Container,
-  Header,
-  Title,
-  InfoTextLabel,
-  InfoText,
-  ListTitle,
-} from "./styles";
-import Loading from "../../../components/Loading";
+import { Container, ListTitle } from "./styles";
+import Loading from "../../components/Loading";
 
 type RootStackParamList = {
   Details: { url: string };
@@ -81,7 +70,7 @@ const Details: React.FC = () => {
               <FlatList
                 horizontal
                 data={detail.people}
-                renderItem={({ item }) => <PeopleCard url={item} />}
+                renderItem={({ item }) => <DetailCard url={item} />}
                 keyExtractor={(item) => item}
               />
             </>
@@ -93,7 +82,7 @@ const Details: React.FC = () => {
               <FlatList
                 horizontal
                 data={detail.characters}
-                renderItem={({ item }) => <PeopleCard url={item} />}
+                renderItem={({ item }) => <DetailCard url={item} />}
                 keyExtractor={(item) => item}
               />
             </>
@@ -105,7 +94,7 @@ const Details: React.FC = () => {
               <FlatList
                 horizontal
                 data={detail.planets}
-                renderItem={({ item }) => <PlanetCard url={item} />}
+                renderItem={({ item }) => <DetailCard url={item} />}
                 keyExtractor={(item) => item}
               />
             </>
@@ -117,7 +106,7 @@ const Details: React.FC = () => {
               <FlatList
                 horizontal
                 data={detail.starships}
-                renderItem={({ item }) => <StarshipCard url={item} />}
+                renderItem={({ item }) => <DetailCard url={item} />}
                 keyExtractor={(item) => item}
               />
             </>
@@ -129,7 +118,7 @@ const Details: React.FC = () => {
               <FlatList
                 horizontal
                 data={detail.vehicles}
-                renderItem={({ item }) => <VehicleCard url={item} />}
+                renderItem={({ item }) => <DetailCard url={item} />}
                 keyExtractor={(item) => item}
               />
             </>
@@ -141,7 +130,7 @@ const Details: React.FC = () => {
               <FlatList
                 horizontal
                 data={detail.species}
-                renderItem={({ item }) => <SpecieCard url={item} />}
+                renderItem={({ item }) => <DetailCard url={item} />}
                 keyExtractor={(item) => item}
               />
             </>

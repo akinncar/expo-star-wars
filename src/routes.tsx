@@ -4,7 +4,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 import Home from "./screens/Home";
 import List from "./screens/List";
-import Details from "./screens/Films/Details";
+import Details from "./screens/Details";
 
 const Stack = createStackNavigator();
 

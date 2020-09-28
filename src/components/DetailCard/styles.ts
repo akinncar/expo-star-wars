@@ -1,13 +1,14 @@
 import styled from "styled-components/native";
 
-export const Container = styled.ScrollView`
-  flex: 1;
+export const Container = styled.View`
   background-color: #070b13;
+  padding: 0 18px;
 `;
 
-export const Header = styled.View`
+export const Content = styled.View`
   background-color: #1c2e56;
   padding: 18px;
+  border-radius: 12px;
 `;
 
 export const Title = styled.Text`
@@ -23,10 +24,4 @@ export const InfoTextLabel = styled.Text`
 
 export const InfoText = styled.Text`
   color: #9fb4df;
-`;
-
-export const ListTitle = styled.Text`
-  font-size: 24px;
-  color: #fff;
-  padding: 18px 12px;
 `;
