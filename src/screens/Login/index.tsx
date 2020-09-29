@@ -30,7 +30,6 @@ const Login: React.FC = () => {
   function handleLogin() {
     if (inputText !== "") {
       login(inputText);
-      navigation.navigate("BottomTab");
     }
   }
 

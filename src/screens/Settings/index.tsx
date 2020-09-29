@@ -40,9 +40,7 @@ function renderExpoLogo() {
 const Settings: React.FC = () => {
   const { username, logout } = useAuth();
 
-  useEffect(() => {
-    console.log(username);
-  }, []);
+  useEffect(() => {}, []);
 
   return (
     <Container>
