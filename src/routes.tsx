@@ -6,6 +6,8 @@ import Home from "./screens/Home";
 import List from "./screens/List";
 import Details from "./screens/Details";
 
+import { theme } from "./styles/theme";
+
 const Stack = createStackNavigator();
 
 function Routes() {
@@ -25,10 +27,10 @@ function Routes() {
           options={({ route }) => ({
             title: route.params?.title,
             headerStyle: {
-              backgroundColor: "#070b13",
-              shadowColor: "#1c2e56",
+              backgroundColor: theme.background,
+              shadowColor: theme.primary,
             },
-            headerTintColor: "#fff",
+            headerTintColor: theme.white,
           })}
         />
         <Stack.Screen
@@ -36,11 +38,11 @@ function Routes() {
           component={Details}
           options={{
             headerStyle: {
-              backgroundColor: "#070b13",
-              shadowColor: "#1c2e56",
+              backgroundColor: theme.background,
+              shadowColor: theme.primary,
             },
+            headerTintColor: theme.white,
             headerTitle: "",
-            headerTintColor: "#fff",
           }}
         />
       </Stack.Navigator>

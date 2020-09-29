@@ -41,4 +41,3 @@ function useFilms(): FilmsContextData {
 }
 
 export { FilmsProvider, useFilms };
-0;

@@ -8,7 +8,7 @@ export const Container = styled.TouchableOpacity`
 
 export const Content = styled.View`
   flex: 1;
-  background-color: #1c2e56;
+  background-color: ${(props) => props.theme.primary};
   border-radius: 12px;
   padding: 16px;
   flex-direction: row;
@@ -17,5 +17,5 @@ export const Content = styled.View`
 
 export const FilmTitle = styled.Text`
   font-size: 18px;
-  color: #fff;
+  color: ${(props) => props.theme.white};
 `;

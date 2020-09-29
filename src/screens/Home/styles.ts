@@ -3,7 +3,7 @@ import { Platform } from "react-native";
 
 export const Container = styled.View`
   flex: 1;
-  background-color: #070b13;
+  background-color: ${(props) => props.theme.background};
   justify-content: space-around;
 `;
 

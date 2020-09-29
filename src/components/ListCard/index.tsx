@@ -4,6 +4,7 @@ import { useNavigation } from "@react-navigation/native";
 import { Ionicons } from "@expo/vector-icons";
 
 import { Container, Content, FilmTitle } from "./styles";
+import { theme } from "../../styles/theme";
 
 interface Props {
   title: string;
@@ -18,7 +19,7 @@ const FilmCard: React.FC<Props> = ({ title, url, page }: Props) => {
     <Container onPress={() => navigation.navigate("Details", { url: url })}>
       <Content>
         <FilmTitle>{title}</FilmTitle>
-        <Ionicons name="ios-arrow-forward" size={24} color="#fff" />
+        <Ionicons name="ios-arrow-forward" size={24} color={theme.white} />
       </Content>
     </Container>
   );

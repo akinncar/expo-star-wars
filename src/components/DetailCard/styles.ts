@@ -1,27 +1,27 @@
 import styled from "styled-components/native";
 
 export const Container = styled.View`
-  background-color: #070b13;
+  background-color: ${(props) => props.theme.background};
   padding: 0 18px;
 `;
 
 export const Content = styled.View`
-  background-color: #1c2e56;
+  background-color: ${(props) => props.theme.primary};
   padding: 18px;
   border-radius: 12px;
 `;
 
 export const Title = styled.Text`
-  color: #fff;
-  font-weight: bold;
-  font-size: 24px;
+  color: ${(props) => props.theme.white};
+  font-weight: 600;
+  font-size: 20px;
 `;
 
 export const InfoTextLabel = styled.Text`
-  color: #fff;
+  color: ${(props) => props.theme.white};
   padding-top: 8px;
 `;
 
 export const InfoText = styled.Text`
-  color: #9fb4df;
+  color: ${(props) => props.theme.secondaryText};
 `;

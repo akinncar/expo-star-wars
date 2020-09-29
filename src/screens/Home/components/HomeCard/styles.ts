@@ -8,7 +8,7 @@ export const Container = styled.TouchableOpacity`
 
 export const Content = styled.View`
   flex: 1;
-  background-color: #1c2e56;
+  background-color: ${(props) => props.theme.primary}
   border-radius: 12px;
   padding: 16px;
   flex-direction: column;
@@ -18,7 +18,7 @@ export const Content = styled.View`
 
 export const CardTitle = styled.Text`
   font-size: 24px;
-  color: #fff;
+  color: ${(props) => props.theme.white};
   font-weight: 300;
   padding-top: 18px;
 `;
