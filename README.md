@@ -1,5 +1,5 @@
 <p align="center"> 
-  <img src="./assets/header.png" href="https://fortstatus.netlify.com">
+  <img style="max-width: 450px" src="./assets/header.png" href="https://fortstatus.netlify.com">
 </p>
 
 <p align="center"> 
@@ -12,21 +12,22 @@
   </a>
 </p>
 
-<!-- <p align="center">
-  <a aria-label="try fortstatus" href="https://fortstatus.netlify.app/"><b>Try in the Browser</b></a>
- |
-  <a aria-label="subscribe on youtube" href="https://www.youtube.com/channel/UCdbUT3GEnXld4tzYRZkGVHA">Check out my youtube channel</a>
-</p> -->
+<p align="center">
+  <!-- <a aria-label="try expo star wars" href="https://fortstatus.netlify.app/"><b>Try in the Browser</b></a>
+ | -->
+  <a aria-label="try in expo app" href="https://expo.io/@akinncar/expo-star-wars">Try in Expo</a>
+</p>
 
 ## Stack
 
 - [Expo](http://expo.io) (ios, android, web)
 - [React Native](http://reactnative.dev/) (ios, android)
+- [Styled Components](https://styled-components.com/) (styles)
 <!-- - [React Native for web](https://baconbrix.gitbook.io/react-native-web/) (web) -->
 
 ## License
 
-The game's source code is made available under the [MIT license](LICENSE). Some of the dependencies are licensed differently, with the BSD license, for example.
+The app's source code is made available under the [MIT license](LICENSE). Some of the dependencies are licensed differently, with the BSD license, for example.
 
 ## Contact
 

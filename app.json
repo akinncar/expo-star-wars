@@ -1,10 +1,11 @@
 {
   "expo": {
-    "name": "expo-star-wars",
+    "name": "Expo Star Wars",
     "slug": "expo-star-wars",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+    "description": "A Star Wars app to show information from the filmes.",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",

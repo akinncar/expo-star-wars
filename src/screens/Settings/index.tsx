@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
+
+import { useAuth } from "../../hooks/auth";
 
 import { Ionicons } from "@expo/vector-icons";
 
@@ -36,7 +38,11 @@ function renderExpoLogo() {
 }
 
 const Settings: React.FC = () => {
-  const username = "akinncar";
+  const { username, logout } = useAuth();
+
+  useEffect(() => {
+    console.log(username);
+  }, []);
 
   return (
     <Container>
@@ -46,7 +52,7 @@ const Settings: React.FC = () => {
         </LogoContainer>
         <UserContainer>
           <Label>You are logged in with: {username}</Label>
-          <LogoutButton onPress={() => {}}>
+          <LogoutButton onPress={() => logout()}>
             <LogoutText>Logout </LogoutText>
             <Ionicons name="md-exit" size={18} color={theme.secondaryText} />
           </LogoutButton>

@@ -3,12 +3,12 @@ import { ThemeProvider } from "styled-components";
 
 import { theme } from "../styles/theme";
 
-import { FilmsProvider } from "./films";
+import { AuthProvider } from "./auth";
 
 const AppProvider: React.FC = ({ children }) => (
   <>
     <ThemeProvider theme={theme}>
-      <FilmsProvider>{children}</FilmsProvider>
+      <AuthProvider>{children}</AuthProvider>
     </ThemeProvider>
   </>
 );
