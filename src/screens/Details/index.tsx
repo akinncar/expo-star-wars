@@ -421,7 +421,7 @@ const Details: React.FC = () => {
             </>
           )}
 
-          {detail.species && (
+          {detail.species && detail.species.length > 0 && (
             <>
               <ListTitle>Species</ListTitle>
               <FlatList

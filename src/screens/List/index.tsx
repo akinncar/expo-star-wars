@@ -28,10 +28,10 @@ const List: React.FC = () => {
   const [list, setList] = useState<Data[]>([]);
 
   useEffect(() => {
-    loadFilms();
+    loadList();
   }, []);
 
-  const loadFilms = useCallback(async () => {
+  const loadList = useCallback(async () => {
     const response = await api.get(route.params.title.toLowerCase());
 
     setList(response.data.results);
