@@ -26,7 +26,8 @@ const AuthProvider: React.FC = ({ children }) => {
       const user = await AsyncStorage.getItem("@ExpoStarWars:username");
 
       if (user) {
-        setUsername(user);
+        setLoading(false);
+        return setUsername(user);
       }
 
       setUsername("");

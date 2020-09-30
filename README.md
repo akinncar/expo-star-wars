@@ -1,5 +1,5 @@
 <p align="center"> 
-  <img style="max-width: 450px" src="./assets/header.png" href="https://fortstatus.netlify.com">
+  <img style="max-width: 450px" src="./assets/header.png" href="https://expostarwars.netlify.com">
 </p>
 
 <p align="center"> 
@@ -13,8 +13,8 @@
 </p>
 
 <p align="center">
-  <!-- <a aria-label="try expo star wars" href="https://fortstatus.netlify.app/"><b>Try in the Browser</b></a>
- | -->
+  <a aria-label="try expo star wars" href="https://expostarwars.netlify.app/"><b>Try in the Browser</b></a>
+ |
   <a aria-label="try in expo app" href="https://expo.io/@akinncar/expo-star-wars">Try in Expo</a>
 </p>
 
@@ -22,8 +22,8 @@
 
 - [Expo](http://expo.io) (ios, android, web)
 - [React Native](http://reactnative.dev/) (ios, android)
+- [React Native for web](https://baconbrix.gitbook.io/react-native-web/) (web)
 - [Styled Components](https://styled-components.com/) (styles)
-<!-- - [React Native for web](https://baconbrix.gitbook.io/react-native-web/) (web) -->
 
 ## License
 
