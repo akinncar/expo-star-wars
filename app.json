@@ -5,7 +5,9 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+    "githubUrl": "https://github.com/akinncar/expo-star-wars",
     "description": "A Star Wars app to show information from the filmes.",
+
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",

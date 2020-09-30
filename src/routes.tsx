@@ -60,8 +60,14 @@ function Routes() {
 
   if (isLoading) {
     return (
-      <View style={{ flex: 1, justifyContent: "center" }}>
-        <ActivityIndicator size="large" color="#999" />
+      <View
+        style={{
+          flex: 1,
+          justifyContent: "center",
+          backgroundColor: theme.background,
+        }}
+      >
+        <ActivityIndicator size="large" color={theme.white} />
       </View>
     );
   }
