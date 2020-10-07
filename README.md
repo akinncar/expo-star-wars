@@ -1,5 +1,5 @@
 <p align="center"> 
-  <img style="max-width: 450px" src="./assets/header.png" href="https://expostarwars.netlify.com">
+  <img width="500" src="./assets/header.png" href="https://expostarwars.netlify.com">
 </p>
 
 <p align="center"> 
