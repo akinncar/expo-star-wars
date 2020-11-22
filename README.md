@@ -13,9 +13,7 @@
 </p>
 
 <p align="center">
-  <a aria-label="try expo star wars" href="https://expostarwars.netlify.app/"><b>Try in the Browser</b></a>
- |
-  <a aria-label="try in expo app" href="https://expo.io/@akinncar/expo-star-wars">Try in Expo</a>
+  <a aria-label="try in expo app" href="https://expo.io/@akinncar/expo-star-wars"><b>Try in Expo</b></a>
 </p>
 
 ## Stack
